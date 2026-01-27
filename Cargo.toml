@@ -1,0 +1,34 @@
+[workspace]
+members = [
+    "crates/*",
+]
+exclude = [
+]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0-dev"
+edition = "2024"
+rust-version = "1.93.0"
+license = "MIT OR Apache-2.0"
+homepage = "https://loco.edger.dev"
+repository = "https://github.com/edger-dev/loco"
+authors = ["YJ Park <yjpark@gmail.com>"]
+
+[workspace.dependencies]
+
+# Crates
+loco-internals = { path = "crates/loco_internals", version = "0.1.0-dev" }
+loco-core = { path = "crates/loco_core", version = "0.1.0-dev" }
+
+# Plugins
+loco-polars = { path = "plugins/loco_polars", version = "0.1.0-dev" }
+loco-styx = { path = "plugins/loco_styx", version = "0.1.0-dev" }
+
+# Utils
+log = { version = "0.4.29", features = ["kv"] }
+fastrace = "0.7.16"
+rootcause = "0.11.1"
+
+# Tests
+rstest = "0.26.1"

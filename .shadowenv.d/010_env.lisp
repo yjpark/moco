@@ -1,0 +1,5 @@
+(env/set "RUST_LOG" "info")
+(env/set "RUSTC_WRAPPER" "sccache")
+(env/set "S2_ACCOUNT_ENDPOINT" "http://127.0.0.1:8883")
+(env/set "S2_BASIN_ENDPOINT" "http://127.0.0.1:8883")
+(env/set "S2_ACCESS_TOKEN" "NO_NEED")
