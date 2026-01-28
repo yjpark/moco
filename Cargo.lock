@@ -3,9 +3,9 @@
 version = 4
 
 [[package]]
-name = "loco-core"
+name = "moco-core"
 version = "0.1.0-dev"
 
 [[package]]
-name = "loco-internals"
+name = "moco-internals"
 version = "0.1.0-dev"

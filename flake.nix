@@ -42,7 +42,7 @@
           # Additional arguments specific to this derivation can be added here.
           # Be warned that using `//` will not do a deep copy of nested
           # structures
-          pname = "loco-deps";
+          pname = "moco-deps";
         });
 
         # Run clippy (and deny all warnings) on the crate source,
@@ -60,7 +60,7 @@
 
         # Build the actual crate itself, reusing the dependency
         # artifacts from above.
-        loco = craneLib.buildPackage (commonArgs // {
+        moco = craneLib.buildPackage (commonArgs // {
           inherit cargoArtifacts;
         });
 
@@ -71,11 +71,11 @@
         });
       in
       {
-        packages.default = loco;
+        packages.default = moco;
         checks = {
          inherit
            # Build the crate as part of `nix flake check` for convenience
-           loco
+           moco
            clippy
            coverage;
         };

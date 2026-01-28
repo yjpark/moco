@@ -1,6 +1,7 @@
 [workspace]
 members = [
     "crates/*",
+    "cells/*",
 ]
 exclude = [
 ]
@@ -11,19 +12,19 @@ version = "0.1.0-dev"
 edition = "2024"
 rust-version = "1.93.0"
 license = "MIT OR Apache-2.0"
-homepage = "https://loco.edger.dev"
-repository = "https://github.com/edger-dev/loco"
+homepage = "https://moco.edger.dev"
+repository = "https://github.com/edger-dev/moco"
 authors = ["YJ Park <yjpark@gmail.com>"]
 
 [workspace.dependencies]
 
 # Crates
-loco-internals = { path = "crates/loco_internals", version = "0.1.0-dev" }
-loco-core = { path = "crates/loco_core", version = "0.1.0-dev" }
+moco-internals = { path = "crates/moco_internals", version = "0.1.0-dev" }
+moco-core = { path = "crates/moco_core", version = "0.1.0-dev" }
 
 # Plugins
-loco-polars = { path = "plugins/loco_polars", version = "0.1.0-dev" }
-loco-styx = { path = "plugins/loco_styx", version = "0.1.0-dev" }
+moco-polars = { path = "plugins/moco_polars", version = "0.1.0-dev" }
+moco-styx = { path = "plugins/moco_styx", version = "0.1.0-dev" }
 
 # Utils
 log = { version = "0.4.29", features = ["kv"] }
