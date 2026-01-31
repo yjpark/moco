@@ -19,11 +19,11 @@ authors = ["YJ Park <yjpark@gmail.com>"]
 [workspace.dependencies]
 
 # Crates
-moco-internals = { path = "crates/moco_internals", version = "0.1.0-dev" }
-moco-core = { path = "crates/moco_core", version = "0.1.0-dev" }
+moco-internals = { path = "crates/moco-internals", version = "0.1.0-dev" }
+moco-core = { path = "crates/moco-core", version = "0.1.0-dev" }
 
-# Plugins
-moco-styx = { path = "cells/moco_styx", version = "0.1.0-dev" }
+# Cells
+moco-styx = { path = "cells/moco-styx", version = "0.1.0-dev" }
 
 # Utils
 log = { version = "0.4.29", features = ["kv"] }

@@ -9,4 +9,5 @@ repository.workspace = true
 authors.workspace = true
 
 [dependencies]
+moco-internals = { workspace = true }
 roam = { git = "https://github.com/bearcove/roam", version = "3.0.0" }
