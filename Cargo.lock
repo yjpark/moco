@@ -9,3 +9,7 @@ version = "0.1.0-dev"
 [[package]]
 name = "moco-internals"
 version = "0.1.0-dev"
+
+[[package]]
+name = "moco-styx"
+version = "0.1.0-dev"

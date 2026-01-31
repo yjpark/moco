@@ -23,8 +23,7 @@ moco-internals = { path = "crates/moco_internals", version = "0.1.0-dev" }
 moco-core = { path = "crates/moco_core", version = "0.1.0-dev" }
 
 # Plugins
-moco-polars = { path = "plugins/moco_polars", version = "0.1.0-dev" }
-moco-styx = { path = "plugins/moco_styx", version = "0.1.0-dev" }
+moco-styx = { path = "cells/moco_styx", version = "0.1.0-dev" }
 
 # Utils
 log = { version = "0.4.29", features = ["kv"] }
