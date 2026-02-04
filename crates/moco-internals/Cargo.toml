@@ -9,4 +9,6 @@ repository.workspace = true
 authors.workspace = true
 
 [dependencies]
+facet = "0.43.2"
+facet-styx = "1.0.1"
 roam = { git = "https://github.com/bearcove/roam", version = "3.0.0" }

@@ -9,4 +9,6 @@ repository.workspace = true
 authors.workspace = true
 
 [dependencies]
+moco-core = { workspace = true }
+
 faketty = "1.0.20"
