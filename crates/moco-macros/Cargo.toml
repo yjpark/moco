@@ -12,4 +12,4 @@ authors.workspace = true
 proc-macro = true
 
 [dependencies]
-facet = "0.43.2"
+moco-internals = { workspace = true }

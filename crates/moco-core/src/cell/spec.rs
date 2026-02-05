@@ -1,4 +1,4 @@
-use moco_macros::Facet;
+use facet::Facet;
 
 #[derive(Facet)]
 pub struct Spec {

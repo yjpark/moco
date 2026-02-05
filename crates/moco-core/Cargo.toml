@@ -11,3 +11,4 @@ authors.workspace = true
 [dependencies]
 moco-internals = { workspace = true }
 moco-macros = { workspace = true }
+facet = { workspace = true }
