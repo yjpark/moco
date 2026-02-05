@@ -1,5 +1,5 @@
 [package]
-name = "moco-internals"
+name = "moco-macros"
 version.workspace = true
 edition.workspace = true
 rust-version.workspace = true
@@ -8,8 +8,8 @@ homepage.workspace = true
 repository.workspace = true
 authors.workspace = true
 
+[lib]
+proc-macro = true
+
 [dependencies]
 facet = "0.43.2"
-facet-styx = "1.0.1"
-roam = { git = "https://github.com/bearcove/roam", version = "3.0.0" }
-semver = "1.0.27"

@@ -20,6 +20,7 @@ authors = ["YJ Park <yjpark@gmail.com>"]
 
 # Crates
 moco-internals = { path = "crates/moco-internals", version = "0.1.0-dev" }
+moco-macros = { path = "crates/moco-macros", version = "0.1.0-dev" }
 moco-core = { path = "crates/moco-core", version = "0.1.0-dev" }
 
 # Cells
