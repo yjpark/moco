@@ -1,3 +1,8 @@
 pub use moco_internals::deps;
 
-pub mod cell;
+mod cell;
+mod spec;
+
+pub use cell::Cell;
+pub use spec::CellSpec;
+pub use spec::FuncSpec;

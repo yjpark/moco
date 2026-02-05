@@ -1,5 +1,5 @@
-use super::spec::Spec;
+use crate::spec::CellSpec;
 
 pub trait Cell {
-    const SPEC: &'static Spec;
+    const SPEC: &'static CellSpec;
 }

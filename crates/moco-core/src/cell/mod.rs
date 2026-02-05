@@ -1,5 +1,3 @@
-pub mod cell;
-pub mod spec;
+mod cell;
 
 pub use cell::Cell;
-pub use spec::Spec;

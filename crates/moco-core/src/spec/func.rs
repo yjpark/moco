@@ -1,9 +1,8 @@
 use facet::Facet;
 
 #[derive(Facet)]
-pub struct Spec {
+pub struct FuncSpec {
     pub name: String,
-    pub version: String,
     pub title: String,
     pub description: String,
 }
