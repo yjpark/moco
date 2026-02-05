@@ -27,6 +27,9 @@ start-s2lite:
   AWS_ALLOW_HTTP="true" \
   {{ project_root }}/bin/server --bucket s2lite --port 8883
 
+start-openobserve:
+  openobserve
+
 install-tools:
   @just _install_cargo_tool rustfs --git https://github.com/rustfs/rustfs
   @just _install_cargo_tool rustfs-cli
