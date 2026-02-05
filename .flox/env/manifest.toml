@@ -21,6 +21,7 @@ just.pkg-path = "just"
 sccache.pkg-path = "sccache"
 cargo-nextest.pkg-path = "cargo-nextest"
 expect.pkg-path = "expect"
+openobserve.pkg-path = "openobserve"
 # gum.pkg-path = "gum"
 # gum.version = "^0.14.5"
 
