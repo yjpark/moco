@@ -66,7 +66,8 @@ cells/
 Key external libraries:
 - **facet** (+ facet-styx): Schema derivation, reflection, and Styx serialization
 - **rootcause**: Error handling — used project-wide for error types, context, and propagation
-- **roam**: From `github.com/bearcove/roam`
+- **fastrace**: Tracing — used project-wide for tracing
+- **roam**: From `github.com/bearcove/roam` - as RPC framework for communication between cells and runtime
 - **rstest**: Parameterized tests
 
 ## Workflow
