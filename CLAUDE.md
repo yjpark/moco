@@ -65,11 +65,13 @@ cells/
 
 Key external libraries:
 - **facet** (+ facet-styx): Schema derivation, reflection, and Styx serialization
+- **rootcause**: Error handling — used project-wide for error types, context, and propagation
 - **roam**: From `github.com/bearcove/roam`
 - **rstest**: Parameterized tests
 
-## Environment
+## Workflow
 
+- **Do not commit.** The user handles all git commits manually.
 - Uses Nix flakes (`flake.nix`) + direnv (`.envrc`) for reproducible dev environments
 - Uses `just` as task runner and `bacon` for hot-reload development
 - Jujutsu (`.jj/`) is used alongside Git for version control
