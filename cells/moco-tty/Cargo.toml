@@ -11,4 +11,7 @@ authors.workspace = true
 [dependencies]
 moco-core = { workspace = true }
 
-faketty = "1.0.20"
+libc = "0.2"
+nix = { version = "0.31", features = ["term", "process", "signal", "fs"] }
+rootcause = { workspace = true }
+log = { workspace = true }
