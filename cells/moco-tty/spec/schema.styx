@@ -1,0 +1,36 @@
+meta {
+    id "crate:moco-tty@1"
+    version 0.1.0
+}
+
+imports {
+    //moco ../../../crates/moco-core/spec/schema.styx
+    moco core.styx
+}
+
+schema {
+    @ @object{
+        cell @CellSpec
+    }
+    SpawnInput @object{
+        command @string
+        args @seq(@string)
+    }
+    SpawnOutput @object{
+        pid @int
+    }
+    CellSpec @object{
+        name @string
+        version @string
+        title @string
+        description @string
+        functions @seq(@FuncSpec)
+    }
+    FuncSpec @object{
+        name @string
+        title @string
+        description @string
+        input_schema @string
+        output_schema @string
+    }
+}

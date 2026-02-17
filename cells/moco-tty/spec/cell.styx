@@ -1,0 +1,18 @@
+//@schema schema.styx @moco.CellSpec
+@schema schema.styx
+
+cell @CellSpec{
+    name "tty"
+    version "0.1.0"
+    title "TTY Cell"
+    description "A cell that provides a terminal interface"
+    functions (
+        @FuncSpec{
+            name "spawn"
+            title "Spawn"
+            description "Spawns a new terminal session"
+            input_schema SpawnInput
+            output_schema SpawnOutput
+        }
+    )
+}

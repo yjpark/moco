@@ -1,9 +1,12 @@
 use facet::Facet;
 
+use crate::FuncSpec;
+
 #[derive(Facet)]
 pub struct CellSpec {
-    pub name: &'static str,
-    pub version: &'static str,
-    pub title: &'static str,
-    pub description: &'static str,
+    pub name: String,
+    pub version: String,
+    pub title: String,
+    pub description: String,
+    pub functions: Vec<FuncSpec>,
 }

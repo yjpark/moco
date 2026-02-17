@@ -1,0 +1,21 @@
+meta {
+    id "crate:moco-core@1"
+    version 0.1.0
+}
+
+schema {
+    CellSpec @object{
+        name @string
+        version @string
+        title @string
+        description @string
+        functions @seq(@FuncSpec)
+    }
+    FuncSpec @object{
+        name @string
+        title @string
+        description @string
+        input_schema @Schema
+        output_schema @Schema
+    }
+}
