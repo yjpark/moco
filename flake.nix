@@ -3,13 +3,29 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     crane.url = "github:ipetkov/crane";
     flake-utils.url = "github:numtide/flake-utils";
+    rust-overlay = {
+      url = "github:oxalica/rust-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, crane, flake-utils, ... }:
+  outputs = { self, nixpkgs, crane, flake-utils, rust-overlay, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = nixpkgs.legacyPackages.${system};
-        craneLib = crane.mkLib pkgs;
+        pkgs = import nixpkgs {
+          inherit system;
+          overlays = [ (import rust-overlay) ];
+        };
+        # https://crane.dev/examples/custom-toolchain.html
+        # NB: we don't need to overlay our custom toolchain for the *entire*
+        # pkgs (which would require rebuidling anything else which uses rust).
+        # Instead, we just want to update the scope that crane will use by appending
+        # our specific toolchain there.
+        craneLib = (crane.mkLib pkgs).overrideToolchain (
+          p: p.rust-bin.stable.latest.default.override {
+            targets = [ "wasm32-wasip1" ];
+          }
+        );
         buildInputs = with pkgs; [
           # Add extra build inputs here, etc.
           openssl
