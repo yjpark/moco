@@ -1,5 +1,3 @@
-pub use moco_internals::deps;
-
 mod cell;
 mod func;
 mod spec;
